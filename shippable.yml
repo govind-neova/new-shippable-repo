@@ -8,11 +8,11 @@ branches:
     - master
 
 jobs:
-
-  - name: container_single_task
+  - name: sample-job-A
     type: runSh
     steps:
       - TASK:
-          name: task
           script:
-             - date   
+            - echo "This is job A"
+            - *template-script
+            - echo "some more scripts"
