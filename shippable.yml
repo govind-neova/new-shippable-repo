@@ -13,5 +13,4 @@ jobs:
     steps:
       - TASK:
           script:
-            - echo "This is job A"
-            - echo "some more scripts"
+            - print datetime.datetime.now()
