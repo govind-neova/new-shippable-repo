@@ -14,5 +14,4 @@ jobs:
       - TASK:
           script:
             - echo "This is job A"
-            - *template-script
             - echo "some more scripts"
